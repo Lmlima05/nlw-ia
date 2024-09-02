@@ -1,6 +1,7 @@
 import { Separator } from "./components/ui/separator";
 import { Button } from "./components/ui/button";
 import { Github } from "lucide-react";
+import { Textarea } from './components/ui/textarea';
 
 export function App() {
   return (
@@ -25,7 +26,7 @@ export function App() {
       <main className="flex-1 p-6 flex gap-6">
         <div className="flex flex-col flex-1 gap-4">
           <div className="grid grid-rows-2 gap-4 flex-1">
-
+            <Textarea />
           </div>
 
           <p className="text-small text-muted--foreground">
