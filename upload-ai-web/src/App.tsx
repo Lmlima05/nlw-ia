@@ -27,6 +27,7 @@ export function App() {
         <div className="flex flex-col flex-1 gap-4">
           <div className="grid grid-rows-2 gap-4 flex-1">
             <Textarea />
+            <Textarea />
           </div>
 
           <p className="text-small text-muted--foreground">
