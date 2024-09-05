@@ -27,11 +27,11 @@ export function App() {
         <div className="flex flex-col flex-1 gap-4">
           <div className="grid grid-rows-2 gap-4 flex-1">
             <Textarea 
-              className="resize-none p-4"
+              className="resize-none p-4 leading-relaxed"
               placeholder="Inclua o prompt para a IA..."
             />
             <Textarea 
-              className="resize-none p-4"
+              className="resize-none p-4 leading-relaxed"
               placeholder="Resultado gerado pela IA..." readOnly
             />
           </div>
@@ -40,7 +40,15 @@ export function App() {
             Lembre-se: você pode utilizar a variável <code className="text-viole-400">{'{transcription}'}</code> no seu prompt para adicionar o conteúdo da transcrição do vídeo selecionado.
           </p>
         </div>
-      <aside className="w-80"></aside>  
+        <aside className="w-80 space-y-6">
+          <form className="space-y-6">
+            <label htmlFor="video">
+              Carregar Vídeo
+            </label>
+
+            <input type="file" id="video" accept="video/mp4" className="sr-only" />
+          </form>
+        </aside>  
       </main>
     </div>
   )
