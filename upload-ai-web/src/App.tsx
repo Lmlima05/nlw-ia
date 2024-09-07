@@ -42,9 +42,13 @@ export function App() {
         </div>
         <aside className="w-80 space-y-6">
           <form className="space-y-6">
-            <label htmlFor="video">
-              Carregar Vídeo
+            <label htmlFor="video"
+            className="border flex roundded-md select-video cursor-pointer border-dashedtext-sm flex-clo gap-2 items-center junstify-center">
+              Carregar Vídeo2
             </label>
+
+            <input type="file" id="video" accept="video/mp4" className="sr-only" />
+            <Separator />
 
             <input type="file" id="video" accept="video/mp4" className="sr-only" />
           </form>
