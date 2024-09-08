@@ -48,9 +48,21 @@ export function App() {
             </label>
 
             <input type="file" id="video" accept="video/mp4" className="sr-only" />
-            <Separator />
+            <Separator /> 
 
-            <input type="file" id="video" accept="video/mp4" className="sr-only" />
+            <div className="space-y-1">
+              <Label htmlFor="transcription_prompt">Prompt de trancrição</Label>
+              <Textarea
+                id="transcription_prompt"
+                className="min-h-20 loading-relaxed"
+                placeholder="Inclua palavras-chave mencionadas no vídeo separadas por vírgula (,)"
+              />
+            </div>
+
+            <Button>
+              Carregar vídeo
+              <Upload className="w-4 h-4 ml-2" />
+            </Button> 
           </form>
         </aside>  
       </main>
