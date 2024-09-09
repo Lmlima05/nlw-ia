@@ -1,7 +1,8 @@
 import { Separator } from "./components/ui/separator";
 import { Button } from "./components/ui/button";
-import { Github } from "lucide-react";
+import { Github, FileVideo, Upload } from "lucide-react";
 import { Textarea } from './components/ui/textarea';
+import { Label } from './components/ui/label';
 
 export function App() {
   return (
@@ -21,7 +22,7 @@ export function App() {
             Github
           </Button>
         </div>
-      </div>
+      </div> 
 
       <main className="flex-1 p-6 flex gap-6">
         <div className="flex flex-col flex-1 gap-4">
@@ -59,7 +60,7 @@ export function App() {
               />
             </div>
 
-            <Button>
+            <Button type="submit" className="w-full">
               Carregar vídeo
               <Upload className="w-4 h-4 ml-2" />
             </Button> 
